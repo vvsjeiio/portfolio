@@ -215,6 +215,7 @@
     }
 
     .stain1 {
+        background-image: radial-gradient(rgb(var(--purple)), rgba(0, 0, 0, 0) 55%);
         top: -20px;
         left: 100px;
         width: 300px;
@@ -267,37 +268,27 @@
 
     .company-logo {
         height: 30px;
+        width: 30px;
     }
 
     /*  */
 
     .stain3 {
-        width: 100%;
-        background-image: radial-gradient(rgb(var(--pink)), rgba(0, 0, 0, 0) 70%);
-        border-radius: 50%;
-        position: absolute;
         rotate: 340deg;
         bottom: 0;
         left: -150px;
         width: 900px;
         height: 400px;
-        filter: url(#goo) blur(30px);
         opacity: 0.5;
     }
 
     .stain4 {
-        width: 100%;
-        background-image: radial-gradient(rgb(var(--purple)), rgba(0, 0, 0, 0) 70%);
-        border-radius: 50%;
-        position: absolute;
         rotate: 10deg;
         top: 0;
         right: -100px;
         width: 900px;
         height: 700px;
-        filter: url(#goo) blur(30px);
         opacity: 0.5;
-
     }
 
     /* education */
@@ -402,6 +393,7 @@
     .mail .icon,
     .phone .icon {
         height: 20px;
+        width: 20px;
     }
 
     .copy {
