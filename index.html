@@ -10,12 +10,36 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/smarphone.css">
+
     <link rel="shortcut icon" href="./assets/images/me.png" style="border-radius: 50%;">
 </head>
 
 <body>
+    <menu class="menu">
+        <div class="quit-container">
+            <button class="button-solid quit-menu"><img class="icon" src="./assets/icons/menu.svg" alt="menu"></button>
+        </div>
+        <ul class="selector-menu">
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#education">Éducation</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#soft-skills">Soft Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="button-container">
+            <button class="button-solid darkmode">
+                <img class="show" src="./assets/icons/night-icon.svg" alt="night mode">
+                <img class="hide" src="./assets/icons/day-icon.svg" alt="day mode">
+            </button>
+            <button id="download-cv">Télécharger mon CV</button>
+        </div>
+    </menu>
+
+
+
     <header>
         <div class="transparent header-container">
             <a href="" class="header-element-container" id="me"><img src="./assets/images/me.png" alt="BB"></a>
@@ -34,7 +58,8 @@
                 </button>
                 <button id="download-cv">Télécharger mon CV</button>
             </div>
-
+            <button class="button-solid button-menu"><img class="icon" src="./assets/icons/menu.svg"
+                    alt="menu"></button>
         </div>
     </header>
     <div id="behind-header"></div>
@@ -415,11 +440,13 @@
         </div>
     </div>
 
+
     <footer>
         <p>© 2024 | <u>Designed</u> by Baptiste Blet & Sagar Shah and <u>coded</u> by Baptiste Blet</p>
     </footer>
 
 </body>
 <script src="./js/script.js"></script>
+<script src="./js/menu.js"></script>
 
 </html>

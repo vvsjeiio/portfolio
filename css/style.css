@@ -55,6 +55,10 @@ body {
 
 /* GLOBAL */
 
+.menu {
+    display: none;
+}
+
 h1 {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
@@ -263,6 +267,11 @@ header {
     filter: brightness(110%);
 }
 
+/* hide the menu button dedicated to smarphone */
+.button-menu {
+    display: none;
+}
+
 /* BODY */
 
 body>div {
@@ -344,14 +353,6 @@ body>div {
 
 #about-me .about-me-link li {
     gap: 0.1em;
-}
-
-.stain-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    filter: url(#goo) blur(30px);
 }
 
 .stain1 {
@@ -705,6 +706,8 @@ body>div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    background-image: linear-gradient(315deg, rgba(var(--purple), 0.7), rgb(var(--pink), 0.7)70%);
 }
 
 .contact-container {

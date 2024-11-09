@@ -43,6 +43,7 @@ button.addEventListener('click', () => {
     document.body.classList.toggle("dark-mode");
 });
 
+
 // DOWNLOAD BUTTON -----------
 
 document.getElementById("download-cv").addEventListener("click", function () {
@@ -53,6 +54,7 @@ document.getElementById("download-cv").addEventListener("click", function () {
     link.click();
     document.body.removeChild(link);
 });
+
 
 // SLIDER SIZE ---------------
 
@@ -75,6 +77,7 @@ window.addEventListener("resize", function () {
     softSkillsContainer.style.width = (totalWidth / 3) + "px";
 });
 
+
 // COPY BUTTON -----------------
 
 document.querySelectorAll('.button-copy').forEach(button => {
@@ -92,7 +95,9 @@ document.querySelectorAll('.button-copy').forEach(button => {
     });
 });
 
-// Position for anchor links
+
+// POSITION FOR ANCHOR LINKS --------
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Prevents default behaviour
@@ -101,9 +106,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.getElementById(targetId); // Selects the target element
 
         if (targetElement) {
-            // Calculates the position to centre the section
-            const offsetPosition = targetElement.offsetTop - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+            let offsetPosition;
 
+            // Calculates the position to centre the section
+            if (window.innerWidth >= 550) {
+                offsetPosition = targetElement.offsetTop - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+            }
+            else {
+                offsetPosition = targetElement.offsetTop - (55);
+            }
             // Scrolls to calculated position
             window.scrollTo({
                 top: offsetPosition,
