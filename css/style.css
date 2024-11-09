@@ -35,6 +35,7 @@ html::-webkit-scrollbar {
 
 html {
     scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 html {
