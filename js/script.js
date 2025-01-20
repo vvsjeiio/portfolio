@@ -75,8 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         softSkillsContainer.style.width = (totalWidth / 3) + "px";
     }
 });
-
-// Kepp responsivity
+// Keep responsivity
 window.addEventListener("resize", function () {
     const totalWidth = skillsTagContainer.offsetWidth;
     softSkillsContainer.style.width = (totalWidth / 3) + "px";

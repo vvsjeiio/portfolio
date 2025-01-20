@@ -65,6 +65,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 1000;
     color: rgb(var(--night-mode-black));
+    font-size: 3em;
 }
 
 h2 {
