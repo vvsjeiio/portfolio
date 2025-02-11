@@ -60,28 +60,6 @@ download.forEach(function (download) {
     });
 });
 
-
-// SLIDER SIZE ---------------
-
-document.addEventListener("DOMContentLoaded", function () {
-    const skillsTagContainer = document.querySelector(".soft-skills-container .skills-tag-container");
-    const softSkillsContainer = document.querySelector(".soft-skills-container");
-
-    if (skillsTagContainer && softSkillsContainer) {
-        // Gets the width of skills-tag-container
-        const totalWidth = skillsTagContainer.offsetWidth;
-
-        // Apply 50% of this width to soft-skills-container
-        softSkillsContainer.style.width = (totalWidth / 3) + "px";
-    }
-});
-// Keep responsivity
-window.addEventListener("resize", function () {
-    const totalWidth = skillsTagContainer.offsetWidth;
-    softSkillsContainer.style.width = (totalWidth / 3) + "px";
-});
-
-
 // COPY BUTTON -----------------
 
 document.querySelectorAll('.button-copy').forEach(button => {

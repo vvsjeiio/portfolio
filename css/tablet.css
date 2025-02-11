@@ -180,13 +180,6 @@
         align-items: center;
         background-color: rgb(var(--light-mode-white));
     }
-
-    .soft-skills-container {
-        /* Transparency gradient */
-        mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-        /* WebKit compatibility */
-        -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-    }
 }
 
 @media (max-width: 800px) {
@@ -480,9 +473,8 @@
 
     .soft-skills-container {
         margin-top: 10px;
-        mask-image: linear-gradient(to right, transparent 10%, black 30%, black 70%, transparent 90%);
-        -webkit-mask-image: linear-gradient(to right, transparent 10%, black 30%, black 70%, transparent 90%);
-    }
+        max-width: 90%;
+   }
 
     /* contact */
 

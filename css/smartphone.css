@@ -368,9 +368,8 @@
 
     .soft-skills-container {
         margin-top: 10px;
-        mask-image: linear-gradient(to right, transparent 20%, black 40%, black 60%, transparent 80%);
-        -webkit-mask-image: linear-gradient(to right, transparent 20%, black 40%, black 60%, transparent 80%);
-    }
+        max-width: 100%;
+      }
 
     /* contact */
 

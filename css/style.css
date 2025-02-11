@@ -678,33 +678,12 @@ body>div {
 }
 
 .soft-skills-container {
+    max-width: 80%;
     margin-top: 20px;
-    overflow: hidden;
-    position: relative;
-    /* Transparency gradient */
-    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-    /* WebKit compatibility */
-    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 
 .soft-skills-container .skills-tag-container {
-    animation: slider 25s linear infinite;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-
-.soft-skills-container:hover .skills-tag-container {
-    animation-play-state: paused;
-}
-
-@keyframes slider {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+    justify-content: center;
 }
 
 /* contact */
