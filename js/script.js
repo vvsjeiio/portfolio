@@ -52,7 +52,7 @@ const download = document.querySelectorAll(".download-cv");
 download.forEach(function (download) {
     download.addEventListener("click", function () {
         const link = document.createElement("a");
-        link.href = "./data/CV_Baptiste_BLET_v4.pdf";
+        link.href = "./data/CV_Baptiste_BLET_v5.pdf";
         link.download = "CV_Baptiste_BLET(développeur web).pdf";
         document.body.appendChild(link);
         link.click();
