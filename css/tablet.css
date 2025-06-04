@@ -69,7 +69,17 @@
     /* me */
 
     .text-container {
+        width: 100%;
+    }
+
+    .text-container>h2,
+    p {
         width: 60%;
+    }
+
+    .me-container {
+        top: 425px;
+        left: 80%;
     }
 
     .stain1 {
@@ -326,6 +336,16 @@
         width: 100%;
     }
 
+    .text-container>h2,
+    p {
+        width: 60%;
+    }
+
+    .me-container {
+        top: 45%;
+        left: 80%;
+    }
+
     .stain1 {
         background-image: radial-gradient(rgb(var(--purple)), rgba(0, 0, 0, 0) 55%);
         top: -150px;
@@ -474,7 +494,7 @@
     .soft-skills-container {
         margin-top: 10px;
         max-width: 90%;
-   }
+    }
 
     /* contact */
 
