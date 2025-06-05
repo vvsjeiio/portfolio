@@ -493,6 +493,16 @@
         </div>
     </div>
 
+    <button class="trigger-btn" onclick="openPopup()">Ouvrir la pop-up</button>
+
+    <div class="overlay" id="overlay" onclick="closePopup(event)">
+        <div class="popup transparent" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <h2>Pop-up</h2>
+            <p>Voici une pop-up centrée avec fond flouté et semi-transparent.</p>
+        </div>
+    </div>
+
 
     <footer>
         <p>© 2024 | <u>Designed</u> by Baptiste Blet & Sagar Shah and <u>coded</u> by Baptiste Blet</p>
@@ -501,5 +511,6 @@
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/cv-popup.js"></script>
 
 </html>
