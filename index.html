@@ -70,7 +70,7 @@
                     <img class="show" src="./assets/icons/night-icon.svg" alt="night mode">
                     <img class="hide" src="./assets/icons/day-icon.svg" alt="day mode">
                 </button>
-                <button class="download-cv">Télécharger mon CV</button>
+                <button class="download-cv" onclick="openPopup()">Télécharger mon CV</button>
             </div>
             <button class="button-solid button-menu"><img class="icon" src="./assets/icons/menu.svg"
                     alt="menu"></button>
@@ -493,13 +493,19 @@
         </div>
     </div>
 
-    <button class="trigger-btn" onclick="openPopup()">Ouvrir la pop-up</button>
 
     <div class="overlay" id="overlay" onclick="closePopup(event)">
         <div class="popup transparent" onclick="event.stopPropagation()">
             <span class="close-btn" onclick="closePopup()">×</span>
-            <h2>Pop-up</h2>
-            <p>Voici une pop-up centrée avec fond flouté et semi-transparent.</p>
+            <p>Comme vous avez pu le constater, durant mon cursus j'ai acquis des compétences techniques ne dirigeant
+                vers le développement web. Mais j'ai également acquis des compétences de management et construction de
+                projet. Ayant une forte appétence pour le côté "humain", j'aimerais vraiment avoir la possibilité de
+                mettre en oeuvre mes acquis techniques et humains en m'orientant vers le métier de Product
+                Owner.</p>
+            <div class="popup-container">
+                <button class="download-cv" onclick="downloadDevCV()">CV Développeur Web</button>
+                <button class="download-cv" onclick="downloadPoCV()">CV Product Owner</button>
+            </div>
         </div>
     </div>
 
