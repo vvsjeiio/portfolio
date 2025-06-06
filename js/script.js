@@ -48,17 +48,23 @@ button.forEach(function (button) {
 
 // DOWNLOAD BUTTON -----------
 
-const download = document.querySelectorAll(".download-cv");
-download.forEach(function (download) {
-    download.addEventListener("click", function () {
-        const link = document.createElement("a");
-        link.href = "./data/CV_Baptiste_BLET_v6.pdf";
-        link.download = "CV_Baptiste_BLET(développeur web).pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-});
+function downloadDevCV() {
+    const link = document.createElement("a");
+    link.href = "./data/CV_Baptiste_BLET_DevWeb.pdf";
+    link.download = "Baptiste_BLET_CV(développeur web).pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function downloadPoCV() {
+    const link = document.createElement("a");
+    link.href = "./data/CV_Baptiste_BLET_ProductOwner.pdf";
+    link.download = "Baptiste_BLET_CV(product owner).pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 // COPY BUTTON -----------------
 
