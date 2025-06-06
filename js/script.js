@@ -82,23 +82,6 @@ function copyToClipboard(textToCopy, buttonElement) {
     });
 }
 
-
-// document.querySelectorAll('.button-copy').forEach(button => {
-//     button.addEventListener('click', () => {
-//         const contentToCopy = button.closest('.copy').querySelector('h4').textContent;
-//         navigator.clipboard.writeText(contentToCopy).then(() => {
-//             const copiedMessage = button.nextElementSibling;
-//             copiedMessage.style.opacity = '1';
-//             setTimeout(() => {
-//                 copiedMessage.style.opacity = '0';
-//             }, 1000);
-//         }).catch(err => {
-//             console.error('Copy error :', err);
-//         });
-//     });
-// });
-
-
 // POSITION FOR ANCHOR LINKS --------
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
