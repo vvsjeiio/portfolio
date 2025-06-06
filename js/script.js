@@ -68,9 +68,11 @@ function downloadPoCV() {
 
 // COPY BUTTON -----------------
 
-function copyToClipboard(textToCopy) {
+function copyToClipboard(textToCopy, buttonElement) {
     navigator.clipboard.writeText(textToCopy).then(() => {
-        const copiedMessage = document.querySelector('.copied');
+        const parent = buttonElement.closest('.copy');
+        const copiedMessage = parent.querySelector('.copied');
+
         copiedMessage.style.opacity = '1';
         setTimeout(() => {
             copiedMessage.style.opacity = '0';
@@ -79,6 +81,7 @@ function copyToClipboard(textToCopy) {
         console.error('Copy error :', err);
     });
 }
+
 
 // document.querySelectorAll('.button-copy').forEach(button => {
 //     button.addEventListener('click', () => {
