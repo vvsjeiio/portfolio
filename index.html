@@ -96,7 +96,7 @@
                     <img src="./assets/icons/phone-icon.svg" alt="phone-icon" class=" icon">
                     <p>+33 6 88 19 75 56</p>
                 </li>
-                <li class="copy">
+                <li class="copy" onclick="copyToClipboard('baptiste.blet@viacesi.fr', this)">
                     <img src="./assets/icons/mail-icon.svg" alt="mail-icon" class=" icon">
                     <p>baptiste.blet@viacesi.fr</p>
                 </li>
@@ -464,7 +464,7 @@
             <div class="mail copy">
                 <img class="icon" src="./assets/icons/mail-icon.svg" alt="mail-icon">
                 <h4>baptiste.blet@viacesi.fr</h4>
-                <button class="button-solid button-copy">
+                <button class="button-solid button-copy" onclick="copyToClipboard('baptiste.blet@viacesi.fr', this)">
                     <img class="icon" src="./assets/icons/copy-icon.svg" alt="copy">
                 </button>
                 <div class="copied">Copié !</div>
@@ -472,7 +472,7 @@
             <div class="phone copy">
                 <img class="icon" src="./assets/icons/phone-icon.svg" alt="phone-icon">
                 <h4>+33 6 88 19 75 56</h4>
-                <button class="button-solid button-copy">
+                <button class="button-solid button-copy" onclick="copyToClipboard('+33 6 88 19 75 56', this)">
                     <img class="icon" src="./assets/icons/copy-icon.svg" alt="copy">
                 </button>
                 <div class="copied">Copié !</div>
