@@ -188,6 +188,10 @@
         align-items: center;
     }
 
+    #about-me li p {
+        font-size: small;
+    }
+
     .sonar-marker {
         margin: 0 5px;
     }
