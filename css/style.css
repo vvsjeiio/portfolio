@@ -798,6 +798,10 @@ body>div {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.popup p {
+    text-align: center;
+}
+
 .close-btn {
     position: absolute;
     top: 10px;
