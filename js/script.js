@@ -68,20 +68,35 @@ function downloadPoCV() {
 
 // COPY BUTTON -----------------
 
-document.querySelectorAll('.button-copy').forEach(button => {
-    button.addEventListener('click', () => {
-        const contentToCopy = button.closest('.copy').querySelector('h4').textContent;
-        navigator.clipboard.writeText(contentToCopy).then(() => {
-            const copiedMessage = button.nextElementSibling;
-            copiedMessage.style.opacity = '1';
-            setTimeout(() => {
-                copiedMessage.style.opacity = '0';
-            }, 1000);
-        }).catch(err => {
-            console.error('Copy error :', err);
-        });
+function copyToClipboard(textToCopy, buttonElement) {
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        const parent = buttonElement.closest('.copy');
+        const copiedMessage = parent.querySelector('.copied');
+
+        copiedMessage.style.opacity = '1';
+        setTimeout(() => {
+            copiedMessage.style.opacity = '0';
+        }, 1000);
+    }).catch(err => {
+        console.error('Copy error :', err);
     });
-});
+}
+
+
+// document.querySelectorAll('.button-copy').forEach(button => {
+//     button.addEventListener('click', () => {
+//         const contentToCopy = button.closest('.copy').querySelector('h4').textContent;
+//         navigator.clipboard.writeText(contentToCopy).then(() => {
+//             const copiedMessage = button.nextElementSibling;
+//             copiedMessage.style.opacity = '1';
+//             setTimeout(() => {
+//                 copiedMessage.style.opacity = '0';
+//             }, 1000);
+//         }).catch(err => {
+//             console.error('Copy error :', err);
+//         });
+//     });
+// });
 
 
 // POSITION FOR ANCHOR LINKS --------
